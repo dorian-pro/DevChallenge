@@ -1,0 +1,71 @@
+*{
+    border: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.d-flex {
+    display: flex;
+    gap: 150px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 300px;
+}
+
+button {
+    height: 100%;
+    max-width: 81px;
+    max-height: 36px;
+    width: 100%;
+    font-family: 'Noto Sans JP';
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+    padding: 8px 16px;
+}
+
+.button-default .btn button {
+    background: #E0E0E0;
+}
+
+.button-default .btn button:hover,
+.button-default .btn button:focus{
+    background-color: #aeaeae;
+}
+
+.variant-outline .btn button{
+    border: 1px solid blue;
+    background: transparent;
+    color: blue;
+}
+
+.variant-outline .btn button:hover,
+.variant-outline .btn button:focus{
+    background: rgba(41, 98, 255, 0.1);
+}
+
+.variant-text .btn button{
+    border: none;
+    background: transparent;
+    color: blue;
+}
+
+.variant-text .btn button:hover,
+.variant-text .btn button:focus{
+    background: rgba(41, 98, 255, 0.1);
+}
+
+.disabled .btn button{
+    border: none;
+    background: blue;
+    color: white;
+}
